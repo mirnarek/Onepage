@@ -1,0 +1,84 @@
+@import "./colors.scss";
+@import "./header.scss";
+@import "./body.scss";
+@import "./footer.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.yellowline {
+  width: 15%;
+  height: 3px;
+  border-radius: 1px;
+  margin: auto;
+  background-color: $linecolor;
+}
+
+.whiteline {
+  width: 40%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.greenline {
+  width: 15%;
+  height: 3px;
+  border-radius: 1px;
+  margin: auto;
+  background-color: $maincolor;
+}
+
+.flex-element {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+
+.back,
+.forward {
+  flex: 1 1 auto;
+  padding: 1%;
+  margin-top: -10%;
+  position: relative;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  align-content: center;
+  background-color: rgba(0,0,0,.7);
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #fff;
+    color: rgba(0,0,0,.7);
+  }
+}
+
+.back {
+  float: left;
+  margin-left: 1%;
+}
+
+.forward {
+  float: right;
+  margin-right: 1%;
+}

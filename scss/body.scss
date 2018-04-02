@@ -1,0 +1,108 @@
+@import "./colors.scss";
+
+.firstbody {
+  margin-top: 5%;
+  text-align: center;
+
+  .headerdiv {
+    width: 100%;
+  }
+
+  .items {
+    width: 20%;
+    height: 250px;
+    margin: 5%;
+    flex: 1 0 auto;
+    transition: all 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+      color: #fff;
+      font-size: 1.7em;
+    }
+
+    .itemlogo {
+      font-size: 4em;
+      color: #555555;
+    }
+
+    h5 {
+      font-size: 1.2em;
+    }
+
+    p {
+      font-size: 0.8em;
+      color: #555555;
+    }
+  }
+}
+
+.secondbody {
+  .dark {
+    flex: 1 0 0;
+    padding: 5%;
+    background-color: $lightermaincolor;
+    color: #fff;
+
+    h3 {
+      font-size: 1.3em;
+    }
+
+    p {
+      margin-top: 10%;
+      font-size: 1em;
+    }
+  }
+
+  .light {
+    flex: 1 0 0;
+    padding: 5%;
+    background-color: $maincolor;
+    color: #fff;
+
+    h3 {
+      font-size: 1.3em;
+    }
+
+    .whiteline {
+      width: 40%;
+      height: 3px;
+      background-color: #fff;
+    }
+
+    p {
+      margin-top: 10%;
+      font-size: 1em;
+    }
+  }
+}
+
+.logosdiv {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1em;
+
+  .yellowlinelong {
+    width: 35%;
+    height: 3px;
+    border-radius: 1px;
+    margin: auto;
+    background-color: $linecolor;
+  }
+
+  p {
+    font-size: 0.9em;
+    margin: 5%;
+  }
+
+  .logos {
+    margin-left: 20%;
+
+    .lgs {
+      width: 7%;
+      height: 50px;
+      margin-left: 2%;
+    }
+  }
+}

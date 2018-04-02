@@ -1,0 +1,106 @@
+@import "./colors.scss";
+
+.footerdiv {
+  width: 100%;
+  margin-top: 5%;
+  background-color: #eff0f2;
+
+  .carousel {
+    width: 90%;
+    margin-left: 5%;
+    padding: 5%;
+    overflow: hidden;
+    background-color: rgba(250,250,250,.8);
+
+    .carouselitem {
+      width: 100%;
+      display: none;
+    }
+
+    #sactive {
+      display: flex;
+    }
+
+    p {
+      width: 60%;
+      margin-left: 20%;
+      font-size: 0.8em;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.3em;
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: 3%;
+  background-color: #000000;
+  color: #fff;
+
+  .footerdivs {
+    flex: 1 0 auto;
+    width: 20%;
+    margin-left: 5%;
+
+    p {
+      font-size: 0.8em;
+    }
+
+    .linesmall {
+      width: 70%;
+      height: 1px;
+      background-color: #fff;
+    }
+
+    .social {
+      display: flex;
+      width: 50%;
+
+      .socialbtns {
+        margin-top: 5%;
+        flex: 1 0 auto;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          color: #000000;
+          text-shadow: 0 0 5px #fff;
+        }
+      }
+    }
+
+    .inpgroup {
+      width: 20%;
+      flex-direction: row;
+
+      input {
+        margin-top: 15%;
+      }
+
+      button {
+        margin-top: 15%;
+        background-color: $linecolor;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s;
+        border: 1px solid $linecolor;
+
+        &:hover {
+          background-color: #fff;
+          color: $linecolor;
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+
+  .autor {
+    color: #fff;
+    font-size: 0.5em;
+    margin-top: 20%;
+  }
+}
